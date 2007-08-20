@@ -3,7 +3,7 @@
 Summary:	TetriNET game client for Linux
 Name:		gtetrinet
 Version:	%{version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
 Group:		Games/Arcade
 Source:		ftp://ftp.gnome.org/pub/gnome/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
@@ -12,7 +12,8 @@ Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildrequires:	libgnomeui2-devel
 BuildRequires:  perl-XML-Parser
 BuildRequires:	ImageMagick
-Prereq:		GConf2 >= 2.3.3
+Requires(post):		GConf2 >= 2.3.3
+Requires(preun):		GConf2 >= 2.3.3
 
 %description
 GTetrinet is a client program for the popular TetriNET game, a multiplayer
