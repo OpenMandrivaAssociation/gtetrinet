@@ -45,19 +45,6 @@ convert -geometry 32x32 gtetrinet.png $RPM_BUILD_ROOT%{_iconsdir}/%{name}.png
 convert -geometry 16x16 gtetrinet.png $RPM_BUILD_ROOT%{_miconsdir}/%{name}.png
 
 # menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat > $RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}): \
- command="%{_gamesbindir}/gtetrinet" \
- title="GTetrinet" \
- longtitle="TetriNET game client for Linux" \
- icon="%{name}.png" \
- needs="x11" \
- section="Amusement/Arcade" \
- startup_notify="true" \
- xdg="true"
-EOF
- 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
@@ -96,7 +83,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/*
 %{_mandir}/man?/*
 %{_sysconfdir}/gconf/schemas/*
-%{_menudir}/%{name}
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
