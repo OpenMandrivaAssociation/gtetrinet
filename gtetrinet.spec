@@ -8,6 +8,7 @@ License:	GPL
 Group:		Games/Arcade
 Source:		ftp://ftp.gnome.org/pub/gnome/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
 URL:		http://gtetrinet.sourceforge.net/
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildrequires:	libgnomeui2-devel
 BuildRequires:  perl-XML-Parser
 BuildRequires:	ImageMagick
