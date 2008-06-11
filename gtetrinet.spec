@@ -65,9 +65,7 @@ EOF
 %post_install_gconf_schemas gtetrinet
 
 %preun
-if [ "$1" = "0" ] ; then
-GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source` gconftool-2 --makefile-uninstall-rule %{_sysconfdir}/gconf/schemas/gtetrinet.schemas > /dev/null
-fi 
+%preun_uninstall_gconf_schemas gtetrinet
 
 %postun
 %{clean_menus}
