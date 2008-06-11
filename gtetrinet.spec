@@ -62,7 +62,7 @@ EOF
 
 %post
 %{update_menus}
-GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source` gconftool-2 --makefile-install-rule %{_sysconfdir}/gconf/schemas/gtetrinet.schemas > /dev/null
+%post_install_gconf_schemas gtetrinet
 
 %preun
 if [ "$1" = "0" ] ; then
