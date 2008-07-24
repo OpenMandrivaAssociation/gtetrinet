@@ -3,7 +3,7 @@
 Summary:	TetriNET game client for Linux
 Name:		gtetrinet
 Version:	%{version}
-Release:	%mkrel 2
+Release:	%mkrel 4
 License:	GPL
 Group:		Games/Arcade
 Source:		ftp://ftp.gnome.org/pub/gnome/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
