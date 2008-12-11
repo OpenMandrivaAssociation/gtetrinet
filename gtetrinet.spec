@@ -11,7 +11,7 @@ URL:		http://gtetrinet.sourceforge.net/
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildrequires:	libgnomeui2-devel
 BuildRequires:  perl-XML-Parser
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 Requires(post):		GConf2 >= 2.3.3
 Requires(preun):		GConf2 >= 2.3.3
 
