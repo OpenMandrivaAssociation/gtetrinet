@@ -3,11 +3,13 @@
 Summary:	TetriNET game client for Linux
 Name:		gtetrinet
 Version:	%{version}
-Release:	%mkrel 4
-License:	GPL
+Release:	%mkrel 5
+License:	GPLv2+
 Group:		Games/Arcade
 Source:		ftp://ftp.gnome.org/pub/gnome/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
 URL:		http://gtetrinet.sourceforge.net/
+Patch0:     gtetrinet-0.7.11-fix_default_server.diff
+Patch1:     gtetrinet-0.7.11-fix_format_error.diff 
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildrequires:	libgnomeui2-devel
 BuildRequires:  perl-XML-Parser
@@ -28,6 +30,8 @@ Its features include:
 
 %prep
 %setup -q
+%patch0 -p0
+%patch1 -p0
 
 %build
 %configure2_5x --enable-detach --enable-ipv6
