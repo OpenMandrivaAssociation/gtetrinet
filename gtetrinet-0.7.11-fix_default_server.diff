@@ -1,0 +1,13 @@
+Index: gtetrinet.schemas
+===================================================================
+--- gtetrinet.schemas
++++ gtetrinet.schemas	2009-03-29 16:21:30.000000000 +0200
+@@ -1022,7 +1022,7 @@
+       <applyto>/apps/gtetrinet/player/server</applyto>
+       <owner>gtetrinet</owner>
+       <type>string</type>
+-      <default>tetrinet.org</default>
++      <default>tetrinet.us</default>
+ 
+       <locale name="C">
+         <short>Server where you want to play</short>

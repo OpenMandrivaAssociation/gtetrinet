@@ -1,0 +1,13 @@
+Index: src/tetrinet.c
+===================================================================
+--- src/tetrinet.c
++++ src/tetrinet.c	2009-03-29 16:20:19.000000000 +0200
+@@ -232,7 +232,7 @@
+             dialog = gtk_message_dialog_new (NULL, GTK_DIALOG_MODAL,
+                                              GTK_MESSAGE_ERROR,
+                                              GTK_BUTTONS_OK,
+-                                             buf);
++                                             "%s", buf);
+             gtk_dialog_run (GTK_DIALOG(dialog));
+             gtk_widget_destroy (dialog);
+             g_free (data_utf8);
