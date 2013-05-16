@@ -11,7 +11,7 @@ URL:		http://gtetrinet.sourceforge.net/
 Patch0:     gtetrinet-0.7.11-fix_default_server.diff
 Patch1:     gtetrinet-0.7.11-fix_format_error.diff 
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Buildrequires:	libgnomeui2-devel
+Buildrequires:	pkgconfig(libgnomeui-2.0)
 BuildRequires:  perl-XML-Parser
 BuildRequires:	imagemagick
 Requires(post):		GConf2 >= 2.3.3
