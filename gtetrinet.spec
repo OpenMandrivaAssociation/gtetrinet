@@ -7,7 +7,7 @@ Release:	9
 License:	GPLv2+
 Group:		Games/Arcade
 Source:		ftp://ftp.gnome.org/pub/gnome/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
-URL:		http://gtetrinet.sourceforge.net/
+URL:		https://gtetrinet.sourceforge.net/
 Patch0:     gtetrinet-0.7.11-fix_default_server.diff
 Patch1:     gtetrinet-0.7.11-fix_format_error.diff 
 Buildrequires:	pkgconfig(libgnomeui-2.0)
